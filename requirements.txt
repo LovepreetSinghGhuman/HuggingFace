@@ -20,12 +20,21 @@ scipy                    # Common dependency for transformers pipelines
 # =============================
 # PyTorch & Audio/Visual
 # =============================
-torch                    # PyTorch (CPU version by default)
-torchvision              # PyTorch vision utilities
-torchaudio               # PyTorch audio utilities
+# torch                    # PyTorch (CPU version by default)
+# torchvision              # PyTorch vision utilities
+# torchaudio               # PyTorch audio utilities
 
 # =============================
 # ROCm (AMD GPU) Support
 # =============================
 # For PyTorch ROCm 7.2.1, install with the following command (do NOT add to requirements.txt):
-# pip install torch==2.2.2+rocm7.2.1 torchvision==0.17.2+rocm7.2.1 torchaudio==2.2.2+rocm7.2.1 --index-url https://download.pytorch.org/whl/rocm7.2.1
+# pip install --no-cache-dir `
+#     https://repo.radeon.com/rocm/windows/rocm-rel-7.2.1/rocm_sdk_core-7.2.1-py3-none-win_amd64.whl `
+#     https://repo.radeon.com/rocm/windows/rocm-rel-7.2.1/rocm_sdk_devel-7.2.1-py3-none-win_amd64.whl `
+#     https://repo.radeon.com/rocm/windows/rocm-rel-7.2.1/rocm_sdk_libraries_custom-7.2.1-py3-none-win_amd64.whl `
+#     https://repo.radeon.com/rocm/windows/rocm-rel-7.2.1/rocm-7.2.1.tar.gz
+
+# pip install --no-cache-dir `
+#     https://repo.radeon.com/rocm/windows/rocm-rel-7.2.1/torch-2.9.1%2Brocm7.2.1-cp312-cp312-win_amd64.whl `
+#     https://repo.radeon.com/rocm/windows/rocm-rel-7.2.1/torchaudio-2.9.1%2Brocm7.2.1-cp312-cp312-win_amd64.whl `
+#     https://repo.radeon.com/rocm/windows/rocm-rel-7.2.1/torchvision-0.24.1%2Brocm7.2.1-cp312-cp312-win_amd64.whl
