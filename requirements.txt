@@ -11,7 +11,7 @@ langchain-huggingface   # Hugging Face integration for LangChain
 # LLMs & NLP Libraries
 # =============================
 openai                   # OpenAI API client
-transformers             # Hugging Face Transformers (models, pipelines)
+transformers==4.40.2     # Hugging Face Transformers (compatible with ROCm torch 2.9.1)
 protobuf                 # Protocol Buffers (required by transformers)
 sentencepiece            # Required for Pegasus and some Hugging Face models
 accelerate               # Transformers performance and device management
@@ -21,7 +21,7 @@ scipy                    # Common dependency for transformers pipelines
 # PyTorch & Audio/Visual
 # =============================
 # torch                    # PyTorch (CPU version by default)
-# torchvision              # PyTorch vision utilities
+# torchvision              # DO NOT install from PyPI. Use ROCm wheel only.
 # torchaudio               # PyTorch audio utilities
 
 # =============================
