@@ -1,3 +1,5 @@
+ipykernel                # Jupyter kernel for Python
+jupyterlab               # JupyterLab interface
 
 # =============================
 # LangChain Core & Integrations
